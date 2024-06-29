@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1{
+            color:red;
+            width:50%;
+            text-align: center;
+        }
+        .big{
+            background-color:red;
+            height:300px;
+            width:500px;
+            float:inline-end;
+        }
+        .small{
+            background-color:yellow;
+            height:200px;
+            width:200px;
+            position:relative;
+            left:10%;
+            top:10px;
+        }
+        .stick{
+            height:60px;
+            width:60px;
+            position:relative;
+            background-color:red;
+        }
+        .small:hover{
+            background-color:blue;
+        }
+        h1:hover{
+            background-color:darksalmon;
+        }
+        .x{
+            top:40px;
+            background-color: blue;
+            height:400px;
+            width:800px;
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items:center;
+            justify-items: center;
+        }
+        .y{
+            background-color: red;
+            color: white;
+            height:100px;
+            width:100px;
+        }
+        #fb{
+            background-color:black;
+            align-self: flex-end;
+        }
+        #tb{
+            align-self:start;
+            background-color: black;
+        }
+    </style>
+    <h1>Apna College Div</h1>
+    <div class="big">
+        <div class="small"></div>
+    </div>
+    <div class="stick"></div>
+    <div class="x">
+        <div class="y">First Box</div>
+        <div class="y">Second Box</div>
+        <div class="y" id="tb">Third Box</div>
+        <div class="y" id="fb">Fourth Box</div>
+    </div>
+</body>
+</html>
